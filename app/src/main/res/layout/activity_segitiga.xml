@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Segitiga">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tollbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:text="HITUNG SEGITIGA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="29dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txt_judul"
+        android:textColor="#25ABAD" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Alas"
+        android:ems="10"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignLeft="@+id/txt_judul"
+        android:layout_alignStart="@+id/txt_judul"
+        android:layout_marginTop="35dp"
+        android:id="@+id/Alas" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="Tinggi"
+        android:ems="10"
+        android:layout_below="@+id/txt_judul"
+        android:layout_alignLeft="@+id/txt_judul"
+        android:layout_alignStart="@+id/txt_judul"
+        android:layout_marginTop="35dp"
+        android:id="@+id/Tinggi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+
+            android:id="@+id/btnkeliling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFFFF"
+            android:text="keliling" />
+
+        <Button
+
+            android:id="@+id/btnluas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:text="Luas" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="Luas Segitiga Adalah:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:textSize="15dp"
+
+        android:id="@+id/txt_hasil_luas"
+        android:textColor="#4BB9BA" />
+
+    <TextView
+        android:text="Keliling Segitiga Adalah:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/txt_hasil_keliling"
+        android:textColor="#4BB9BA" />
+</LinearLayout>
