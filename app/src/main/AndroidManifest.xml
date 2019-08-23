@@ -7,23 +7,21 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".activity.Lingkaran"></activity>
+        <activity android:name=".activity.Lingkaran" />
         <activity android:name=".activity.Segitiga" />
         <activity android:name=".activity.PersegiPanjang" />
         <activity android:name=".activity.Persegi" />
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name">
-        </activity>
-
+            android:label="@string/app_name"></activity>
         <activity
             android:name=".activity.IconTextTabsActivity"
             android:label="@string/title_activity_icon_text_tabs"
-            android:parentActivityName=".activity.MainActivity"
-            >
+            android:parentActivityName=".activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

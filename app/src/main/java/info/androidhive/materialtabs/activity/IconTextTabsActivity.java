@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.materialtabs.R;
+import info.androidhive.materialtabs.fragments.FourFragment;
 import info.androidhive.materialtabs.fragments.OneFragment;
 import info.androidhive.materialtabs.fragments.ThreeFragment;
 import info.androidhive.materialtabs.fragments.TwoFragment;
@@ -41,6 +42,7 @@ public class IconTextTabsActivity extends AppCompatActivity {
         adapter.addFrag(new OneFragment(), "Kalkulator");
         adapter.addFrag(new TwoFragment(), "Bangun datar");
         adapter.addFrag(new ThreeFragment(), "Bangun ruang");
+        adapter.addFrag(new FourFragment(), "Bangun ruang");
         viewPager.setAdapter(adapter);
     }
 
